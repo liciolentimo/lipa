@@ -6,7 +6,7 @@ function generateToken()
 
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
-$credentials = base64_encode('2ZObpqVHoo0xjXyOe4Yoo7KIVH8Kgc9O:BJke8dZc4I0Hj8LD');
+$credentials = base64_encode('7etikjOgIIcZ6QFMB1a1t9xXv6Nb69pe:cW8lZmWYZKfkskpo');
 curl_setopt($curl, CURLOPT_HTTPHEADER, array('Authorization: Basic '.$credentials)); //setting a custom header
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
