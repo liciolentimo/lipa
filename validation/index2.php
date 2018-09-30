@@ -1,12 +1,12 @@
 <?php
 $data = file_get_contents('php://input');
 
-//$handle = fopen('validation.txt', 'w');
+$handle = fopen('validation.txt', 'w');
 
-//fwrite($handle, $data);
+fwrite($handle, $data);
 
-$json_decode = json_decode($data);
-$amount = $data['TransAmount'];
+//$json_decode = json_decode($data);
+//$amount = $data['TransAmount'];
 
 if($amount > 100) {
     $response = array(
