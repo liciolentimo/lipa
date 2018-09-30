@@ -34,8 +34,8 @@ $curl_post_data = array(
   //Fill in the request parameters with valid values
   'ShortCode' => '600000',
   'ResponseType' => 'Completed',
-  'ConfirmationURL' => 'phpmpesa.herokuapp.com/confirmation.php',
-  'ValidationURL' => 'phpmpesa.herokuapp.com/validation.php'
+  'ConfirmationURL' => 'https://phpmpesa.herokuapp.com/confirmation.php',
+  'ValidationURL' => 'https://phpmpesa.herokuapp.com/validation.php'
 );
 
 $data_string = json_encode($curl_post_data);
